@@ -1,0 +1,130 @@
+:root {
+  --primary-color: #fdfdfc;
+  --secondary-color: #680000;
+  --background-color: #000000;
+  --spare-color: #3a0000;
+  --some-color: #db0001;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(https://wallpapercave.com/dwp2x/wp1854555.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.App {
+  width: 100%;
+  height: fit-content;
+}
+
+.wrapper {
+  width: 60%;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid var(--spare-color);
+  border-radius: 25px;
+  z-index: -999;
+  background-color: var(--background-color);
+  max-height: 100vh;
+  cursor: default;
+}
+
+.mainHeading {
+  font-size: 3em;
+  margin: 10px;
+  color: var(--secondary-color);
+  letter-spacing: 4px;
+}
+
+.sectionHeadings {
+  margin: 10px;
+  text-decoration: underline;
+  font-size: 1.5em;
+  color: var(--primary-color);
+}
+
+.question {
+  margin: 2px;
+  color: var(--some-color);
+}
+
+.question .questionHeading {
+  letter-spacing: 1px;
+}
+
+.questionHeading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.answer {
+  font-style: italic;
+  color: var(--primary-color);
+  margin: 5px 0;
+}
+
+button {
+  width: 40px;
+  color: var(--some-color);
+  background-color: var(--spare-color);
+  cursor: pointer;
+}
+
+button:hover {
+  filter: drop-shadow(2px 2px 20px var(--some-color));
+  color: var(--spare-color);
+  background-color: var(--some-color);
+}
+
+@media screen and (max-width: 425px) {
+  .wrapper {
+    min-width: 80%;
+    font-size: 0.5em;
+    max-height: fit-content;
+  }
+  .body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .wrapper {
+    min-width: 80%;
+    font-size: 0.8em;
+    max-height: fit-content;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .wrapper {
+    max-height: fit-content;
+    min-width: 80%;
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .wrapper {
+    max-height: fit-content;
+    min-width: 70%;
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .wrapper {
+    max-height: fit-content;
+  }
+}
